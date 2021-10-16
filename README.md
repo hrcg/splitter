@@ -22,7 +22,7 @@ This is my solution to the [Tip calculator app challenge on Frontend Mentor](htt
 
 ### Links
 
-- Live Site URL: (https://hrcg.dev/splitter/)
+- Live Site URL: [Splitter](https://hrcg.dev/splitter/)
 
 ### Built with
 
