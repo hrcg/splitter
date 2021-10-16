@@ -1,0 +1,280 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #c5e4e7;
+  font-family: "Space Mono", monospace;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  border-radius: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card__input-values {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.card__label-container {
+  padding: 0.6rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card label {
+  color: #5e7a7d;
+  font-weight: 700;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.card .input-text {
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: right;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  color: #00494d;
+  padding: 0.5rem 2.4rem;
+}
+
+.card .input-text:focus {
+  border: 2px solid #26c0ab;
+  outline: none;
+}
+
+.card__input-container {
+  position: relative;
+}
+
+.card__input-container img {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+}
+
+.card .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card .button-container .btn {
+  width: 45%;
+  border-radius: 0.5rem;
+  padding: 0.6rem 5rem;
+  background-color: #00494d;
+  color: white;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card .button-container .btn:hover {
+  background-color: #9fe8df;
+}
+
+.card .button-container .btn-active {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+
+.card .button-container .input-text {
+  width: 45%;
+}
+
+.card .input-people {
+  background-color: #f4fafa;
+  border: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: right;
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  color: #00494d;
+  padding: 0.5rem 2.4rem;
+}
+
+.card .input-people:focus {
+  border: 2px solid #26c0ab;
+  outline: none;
+}
+
+.card__output-values {
+  background-color: #00494d;
+  border-radius: 1.5rem;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.card__output-values .output-container .output {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.6rem 0;
+}
+
+.card__output-values .output-container .output .title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.card__output-values .output-container .output .description {
+  color: #7f9c9f;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card__output-values .output-container .output .value {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card__output-values .reset-btn {
+  width: 100%;
+  background-color: #26c0ab;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 700;
+  color: #00494d;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: 1.2rem 0;
+  margin-top: 3rem;
+}
+
+.card__output-values .reset-btn:hover {
+  background-color: #9fe8df;
+}
+
+@media screen and (min-width: 980px) {
+  .card {
+    width: 65%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    border-radius: 2.5rem;
+    padding: 3.5rem;
+    gap: 1.5rem;
+  }
+  .card .input {
+    width: 100%;
+  }
+  .card .input .button-container {
+    width: 30%;
+  }
+  .card .input .input-text {
+    width: 30%;
+  }
+  .card .label-container {
+    padding: 1rem 0;
+  }
+  .card__output-values {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 3.5rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .card__output-values .output-container .output {
+    margin: 0.5rem 0 2.5rem 0;
+  }
+  .card__output-values .output-container .output .value {
+    margin-top: 1rem;
+    font-size: 4.5rem;
+  }
+  .card__output-values .output-container .output-text-container .title {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

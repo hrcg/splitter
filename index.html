@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="app/scss/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="images/logo.svg" alt="logo">
+    </div>
+    <div class="card">
+      <div class="card__input-values">
+        <div class="card__bill-container">
+          <div class="card__label-container">
+            <label for="input-bill">BIll</label>
+          </div>
+
+          <div class="card__input-container">
+            <input class="input-text" type="text" id="input-bill" name="input-bill" placeholder="0">
+            <img src="images/icon-dollar.svg" alt="dollar-sign">
+          </div>
+
+        </div>
+       <div class="card__tip-container">
+         <div class="card__label-container">
+           <label for="input-tip">Select Tip %</label>
+         </div>
+         <div class="button-container">
+           <div class="btn tip">5%</div>
+           <div class="btn tip">10%</div>
+           <div class="btn tip btn-active">15%</div>
+           <div class="btn tip">25%</div>
+           <div class="btn tip">50%</div>
+           <input class="input-text" type="text" name="input-tip" id="input-tip" placeholder="Custom">
+         </div>
+       </div>
+      <div class="card__people-container">
+        <div class="card__label-container">
+          <label for="input-people">Number of People</label>
+        </div>
+
+        <div class="card__input-container">
+          <input class="input-people" type="text" id="input-people" name="input-people" placeholder="1">
+          <img src="images/icon-person.svg" alt="person-icon">
+        </div>
+
+      </div>
+      </div>
+      <div class="card__output-values">
+        <div class="output-container">
+          <div class="output">
+            <div class="output-text-container">
+              <div class="title">Tip Amount</div>
+              <div class="description">/ person</div>
+            </div>
+            <div class="value">0.0</div>
+          </div>
+
+          <div class="output">
+            <div class="output-text-container">
+              <div class="title">Total</div>
+              <div class="description">/ person</div>
+            </div>
+            <div class="value">0.0</div>
+          </div>
+        </div>
+        <div class="reset-btn reset">RESET</div>
+      </div>
+    </div>
+  </div>
+  <script src="app/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin: 5rem 0 3.5rem 0;
+}
+
+.card {
+  background-color: $white;
+  height: 100%;
+  width: 100%;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+
+  &__input-values {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  &__label-container {
+    padding: 0.6rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  label {
+    color: $dark-grayish-cyan-one;
+    font-weight: 700;
+    font-size: 1.5rem;
+    opacity: 0.7;
+  }
+
+  .input-text {
+    background-color: $light-grayish-cyan-two;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: right;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+    color: $very-dark-cyan;
+    padding: 0.5rem 2.4rem;
+    &:focus {
+      border: 2px solid $strong-cyan;
+      outline: none;
+    }
+  }
+
+  &__input-container {
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 1.5rem;
+      left: 2rem;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .btn {
+      width: 45%;
+      border-radius: 0.5rem;
+      padding: 0.6rem 5rem;
+      background-color: $very-dark-cyan;
+      color: $white;
+      font-weight: 700;
+      font-size: 2rem;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(159, 232, 223);
+      }
+    }
+    .btn-active {
+      background-color: $strong-cyan;
+      color: $very-dark-cyan;
+    }
+    .input-text {
+      width: 45%;
+    }
+  }
+
+  .input-people {
+    background-color: $light-grayish-cyan-two;
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    text-align: right;
+    font-size: 2.4rem;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+    color: $very-dark-cyan;
+    padding: 0.5rem 2.4rem;
+    &:focus {
+      border: 2px solid $strong-cyan;
+      outline: none;
+    }
+  }
+
+  &__output-values {
+    background-color: $very-dark-cyan;
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 2.5rem;
+
+    .output-container {
+      .output {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1.6rem 0;
+
+        .title {
+          color: $white;
+          font-size: 1.6rem;
+          font-weight: 700;
+        }
+        .description {
+          color: $dark-grayish-cyan-two;
+          font-size: 1.2rem;
+          font-weight: 700;
+        }
+
+        .value {
+          color: $strong-cyan;
+          font-weight: 700;
+          font-size: 3rem;
+        }
+      }
+    }
+    .reset-btn {
+      width: 100%;
+      background-color: $strong-cyan;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-size: 2rem;
+      cursor: pointer;
+      font-weight: 700;
+      color: $very-dark-cyan;
+      transition: all 0.2s ease-in-out;
+      padding: 1.2rem 0;
+      margin-top: 3rem;
+      &:hover {
+        background-color: rgb(159, 232, 223);
+      }
+    }
+  }
+}
+@media screen and (min-width: 980px) {
+  .card {
+    width: 65%;
+    flex-direction: row;
+    align-items: stretch;
+    border-radius: 2.5rem;
+    padding: 3.5rem;
+    gap: 1.5rem;
+
+    .input {
+      width: 100%;
+      .button-container {
+        width: 30%;
+      }
+      .input-text {
+        width: 30%;
+      }
+    }
+
+    .label-container {
+      padding: 1rem 0;
+    }
+
+    &__output-values {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 3.5rem;
+      justify-content: space-between;
+
+      .output-container {
+        .output {
+          margin: 0.5rem 0 2.5rem 0;
+          .value {
+            margin-top: 1rem;
+            font-size: 4.5rem;
+          }
+        }
+        .output-text-container {
+          .title {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
