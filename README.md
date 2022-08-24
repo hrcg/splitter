@@ -20,10 +20,6 @@ This is my solution to the [Tip calculator app challenge on Frontend Mentor](htt
   <img alt="Mobile Screenshot" src="./images/ss_mobile.png" width="75%">
 </p>
 
-### Links
-
-- Live Site URL: [Splitter](https://eraldkuci.dev/splitter/)
-
 ### Built with
 
 - HTML
